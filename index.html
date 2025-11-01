@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c0cb5ca20e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Data Scientist</p>
+        <h1>Hi, I'm <span>Shreya</span><br>Vispute</h1>
+        
+          <img src="images/user.jpg">
+        
+      </div>
+    </div>
+  </div>
+  <!-- -------about---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/background.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>A passionate web developer who builds clean, accessible and responsive websites.
+             I enjoy solving problems and learning new technologies.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('eduaction')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Science</span><br>Artificial Intelligence / Machine Learning</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>Python Development</span><br>Python Development</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>31/01/2025</span><br>TechFeasta-2K25 Event in Web Page.</li>
+              <li><span>2025</span><br>Participated in National Science Day Event held at S.S.V.P.V's L.K.Dr.P.R.Ghogrey Science College,Dhule in Working Model representation.</li>
+              <li><span>2023 - 2024</span><br>Intership at Quick Heal Foundation,Pune as a Cyber Warrior.</li>
+              <li><span>2024 - 2025</span><br>Intership at Quick Heal Foundation,Pune as a Media/PR Coordinator.</li>
+              <li><span>2024</span><br>Participated and presented a Poster on AI Technology held at Systel Institute of Management and Research,Dhule.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="eduaction">
+            <ul>
+              <li><span>2023-2026</span><br>T.Y.Bsc Data Science at S.S.V.P.V's L.K.Dr.P.R.Ghogrey Science College,Dhule.</li>
+              <li><span>CGPA</span><br>9.00.</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------services---------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Technical Skills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Data Science</h2>
+          <p>Data science is the interdisciplinary field of extracting knowledge and insights from structured
+             and unstructured data using scientific methods, algorithms, and systems.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-alt"></i>
+          <h2>Web Design</h2>
+          <p>Web development is the process of building and maintaining websites and web applications,
+             which involves tasks like coding, designing, and managing databases.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Python Developer</h2>
+          <p>A Python developer designs, codes, and debugs applications and projects using the Python language.</p>
+          <p>Their role can be specialized in areas like web development, data science, machine learning, or automation, and involves writing efficient
+        , testable code for server-side logic, data analysis, and other applications.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- --------portfolio---------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.jpg">
+          <div class="layer">
+            <h3>Robo Speaker</h3>
+            <p>Robo Speaker is a python project that converts text into speech using the pyttsx3 .
+                It allows users to type text and hear it spoken aloud like a robot.
+            </p>
+            <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.jpg">
+          <div class="layer">
+            <h3>Men Salon Management System</h3>
+            <p>Men Salon Management System is a Web-based project to manage salon services, bookings, and customer data.</p>
+            <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Online Car Rental System</h3>
+            <p>Online Car Rental System is a Web-based project that allow users to book cars online and admins to manage car listings and rentals efficiently.</p>
+            <a href="#"><i class="fa-solid fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+  <!-- --------contact---------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>100shreyavi@gmail.com</p>
+          <p><i class="fa-solid fa-phone-square-alt"></i>8767888947</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/shreya-vispute-a21081225/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/cv1.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Shreya. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link")
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz7AV6b8KJ01OFfAEgxYRqLR2DfwiMZ_IbvoktVY5MZLRdG2Ct7iIUuwgO4DvDo7h0W/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
