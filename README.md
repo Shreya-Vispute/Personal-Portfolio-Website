@@ -20,26 +20,14 @@ personal-portfolio-website
 - **Interactive Elements**: JavaScript is used to add interactivity, including animations and smooth scrolling.
 - **Dynamic Content**: Project data can be loaded dynamically from a JSON file, allowing for easy updates.
 
-## Setup and Usage
+## ▶️ How to Run
 
-1. **Clone the Repository**:
-   ```
-   git clone <repository-url>
-   ```
+1. 📥 Download the repository:
+   ```bash
+   git clone https://github.com/Shreya-Vispute/Personal Portfolio Website.git
+   cd portfolio
+2. ▶️ Run the Code in VS Code or any other Editor:
+- index.html
 
-2. **Navigate to the Project Directory**:
-   ```
-   cd personal-portfolio-website
-   ```
 
-3. **Open the `index.html` File**:
-   You can open the `src/index.html` file in a web browser to view the portfolio.
-
-4. **Install Dependencies** (if any):
-   If there are any dependencies listed in `package.json`, you can install them using npm:
-   ```
-   npm install
-   ```
-
-5. **Run the Project**:
-   You can use a local server to run the project for better testing of features like JavaScript interactivity.
+   
